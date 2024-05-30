@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.98.0">
+        <title>Login</title>
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/blog/">
+        <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- Custom styles for this template -->
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/css_login.css">
+    </head>
+    <body>
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none conatiner-fluid">
+                <img src="imagens/logo.jpeg" class="bi me-2" width="125" height="75"></img> 
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Inicio</a></li>
+                <li class="nav-item"><a href="#Qs" class="nav-link">Sobre nós</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+        </header>
+
+        <div class="container">
+            <div class="card card-container">
+                <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+                <p id="profile-name" class="profile-name-card"></p>
+                <form class="form-signin" id="loginForm">
+                    <span id="reauth-email" class="reauth-email"></span>
+                    <input type="text" id="nome" class="form-control" placeholder="Nome" required autofocus>
+                    <input type="password" id="senha" class="form-control" placeholder="Senha" required>
+                    <div id="remember" class="checkbox">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Lembre-se de mim
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-primary btn-block btn-signin">Entrar</button>
+                </form><!-- /form -->
+                <a href="#" class="forgot-password">
+                    Esqueceu a senha?
+                </a>
+                <a href="cadastro.html" class="forgot-password">
+                    Não possui cadastro? 
+                    Cadastre agora
+                </a>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('loginForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                window.location.href = 'perfil.html';
+            });
+        </script>
+    </body>
+</html>
